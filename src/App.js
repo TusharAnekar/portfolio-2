@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Header } from "./components/Header";
+import { Skills } from "./components/Skills";
+import { useThemeContext } from "./contexts/theme-context";
+import { Hero } from "./components/Hero";
+import { Projects } from "./components/Projects";
+import { Experience } from "./components/Experience";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
+  const { theme } = useThemeContext();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App bg-bkg text-content theme-${theme}`}>
+      <div className=" sticky top-0 bg-orange-500">
+        <Header />
+      </div>
+
+      <Hero />
+      <div className="border-t-2 border-content">
+        <Skills />
+      </div>
+
+      <div className="border-t-2 border-content">
+        <Projects />
+      </div>
+
+      <div className="border-t-2 border-content">
+        <Experience />
+      </div>
+
+      <div className="border-t-2 border-content">
+        <Contact />
+      </div>
+
+      <div className="border-t-2 border-content">
+        <Footer />
+      </div>
     </div>
   );
 }
