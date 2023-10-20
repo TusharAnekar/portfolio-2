@@ -3,6 +3,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import PeerlistLogo from "../images/peerlist.jpeg";
+
 import { NavLink } from "react-router-dom";
 
 const Contact = () => {
@@ -55,6 +57,18 @@ const Contact = () => {
               rel="noopener norefferrer"
             >
               <TwitterIcon />
+            </NavLink>
+
+            <NavLink
+              to={"https://peerlist.io/tusharanekar"}
+              target="_blank"
+              rel="noopener norefferrer"
+            >
+              <img
+                src={PeerlistLogo}
+                alt="Peerlist"
+                className="h-6 w-6 rounded-full"
+              />
             </NavLink>
           </div>
         </div>

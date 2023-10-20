@@ -1,4 +1,5 @@
 import HeroImg from "../images/Hero.jpg";
+import PeerlistLogo from "../images/peerlist.jpeg";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -54,9 +55,21 @@ const Hero = () => {
             >
               <TwitterIcon />
             </NavLink>
+
+            <NavLink
+              to={"https://peerlist.io/tusharanekar"}
+              target="_blank"
+              rel="noopener norefferrer"
+            >
+              <img
+                src={PeerlistLogo}
+                alt="Peerlist"
+                className="h-6 w-6 rounded-full"
+              />
+            </NavLink>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="mt-8 flex items-center gap-2">
             <span className="relative flex h-3 w-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
