@@ -18,7 +18,7 @@ const Contact = () => {
         </p>
         <div className="my-8 flex flex-col items-center gap-4">
           <div
-            className="flex h-6 w-6 animate-bounce cursor-pointer items-center justify-center gap-4 "
+            className="flex h-6 w-6 animate-bounce cursor-pointer items-center justify-center gap-4"
             onClick={() => (window.location = "mailto:anekar.tushar@gmail.com")}
           >
             <EmailIcon />

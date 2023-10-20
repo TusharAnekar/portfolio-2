@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className={`App bg-bkg text-content theme-${theme}`}>
-      <div className=" sticky top-0 bg-orange-500">
+      <div className=" sticky top-0 z-10 bg-orange-500">
         <Header />
       </div>
 

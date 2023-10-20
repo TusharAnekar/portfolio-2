@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <div className="mx-auto max-w-screen-lg">
-      <header className=" flex justify-between p-4">
+      <header className="flex justify-between p-4">
         <HashLink
           to={"#"}
           className="text-xl font-semibold md:text-2xl lg:text-3xl"
