@@ -12,21 +12,24 @@ const Projects = () => {
 
         <ul className="mt-8 flex flex-col gap-8">
           {projects.map(
-            ({
-              id,
-              projectHeroImg,
-              name,
-              description,
-              features,
-              techStack,
-              projectURL,
-              githubRepoURL,
-            }) => (
+            (
+              {
+                id,
+                projectHeroImg,
+                name,
+                description,
+                features,
+                techStack,
+                projectURL,
+                githubRepoURL,
+              },
+              index,
+            ) => (
               <li
                 key={id}
                 className="flex flex-col gap-8 rounded-2xl border border-content p-4 md:aspect-auto md:flex-row"
               >
-                <div className="p-4">
+                <div className={`p-4 ${index % 2 && "md:order-last"}`}>
                   <img
                     src={projectHeroImg}
                     alt={name}
