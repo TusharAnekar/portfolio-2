@@ -41,6 +41,7 @@ const Contact = () => {
               to={"https://github.com/TusharAnekar"}
               target="_blank"
               rel="noopener norefferrer"
+              className={"transition duration-500 hover:scale-125"}
             >
               <GitHubIcon />
             </NavLink>
@@ -48,6 +49,7 @@ const Contact = () => {
               to={"https://www.linkedin.com/in/tusharanekar/"}
               target="_blank"
               rel="noopener norefferrer"
+              className={"transition duration-500 hover:scale-125"}
             >
               <LinkedInIcon />
             </NavLink>
@@ -55,6 +57,7 @@ const Contact = () => {
               to={"https://twitter.com/TusharAnekar"}
               target="_blank"
               rel="noopener norefferrer"
+              className={"transition duration-500 hover:scale-125"}
             >
               <TwitterIcon />
             </NavLink>
@@ -63,6 +66,7 @@ const Contact = () => {
               to={"https://peerlist.io/tusharanekar"}
               target="_blank"
               rel="noopener norefferrer"
+              className={"transition duration-500 hover:scale-125"}
             >
               <img
                 src={PeerlistLogo}

@@ -21,7 +21,7 @@ const Experience = () => {
             }) => (
               <li
                 key={id}
-                className="flex flex-col gap-4 rounded-2xl border border-content p-4 md:flex-row"
+                className="flex flex-col gap-4 rounded-2xl border border-content p-4 md:flex-row md:justify-between"
               >
                 <img
                   src={companyImg}

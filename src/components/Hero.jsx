@@ -19,7 +19,7 @@ const Hero = () => {
           alt="Tushar Anekar"
           className="aspect-auto w-full md:w-96"
         />
-        <div className="flex flex-col gap-2 md:self-center">
+        <div className="flex flex-col gap-4 md:self-center">
           <p className="text-4xl font-medium md:text-5xl">Hi, I am Tushar 🙏</p>
           <p>
             A web developer, learning and applying the latest technologies and
@@ -38,6 +38,7 @@ const Hero = () => {
               to={"https://github.com/TusharAnekar"}
               target="_blank"
               rel="noopener norefferrer"
+              className={"transition duration-500 hover:scale-125"}
             >
               <GitHubIcon />
             </NavLink>
@@ -45,6 +46,7 @@ const Hero = () => {
               to={"https://www.linkedin.com/in/tusharanekar/"}
               target="_blank"
               rel="noopener norefferrer"
+              className={"transition duration-500 hover:scale-125"}
             >
               <LinkedInIcon />
             </NavLink>
@@ -52,6 +54,7 @@ const Hero = () => {
               to={"https://twitter.com/TusharAnekar"}
               target="_blank"
               rel="noopener norefferrer"
+              className={"transition duration-500 hover:scale-125"}
             >
               <TwitterIcon />
             </NavLink>
@@ -60,6 +63,7 @@ const Hero = () => {
               to={"https://peerlist.io/tusharanekar"}
               target="_blank"
               rel="noopener norefferrer"
+              className={"transition duration-500 hover:scale-125"}
             >
               <img
                 src={PeerlistLogo}
@@ -69,7 +73,7 @@ const Hero = () => {
             </NavLink>
           </div>
 
-          <div className=" mt-8 flex  items-center gap-2">
+          <div className="mt-4 flex items-center gap-2">
             <span className="relative flex h-3 w-3 ">
               <span className="absolute  inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
