@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { workExperience } from "../db/workExperience";
 
 const Experience = () => {
@@ -14,6 +15,7 @@ const Experience = () => {
               id,
               companyImg,
               name,
+              companyURL,
               position,
               projects,
               period,
@@ -23,11 +25,17 @@ const Experience = () => {
                 key={id}
                 className="flex flex-col gap-4 rounded-2xl border border-content p-4 md:flex-row md:justify-between"
               >
-                <img
-                  src={companyImg}
-                  alt={name}
-                  className="md:w-26 aspect-auto w-36 items-start md:h-14"
-                />
+                <NavLink
+                  to={companyURL}
+                  target="_blank"
+                  rel="noopener norefferrer"
+                >
+                  <img
+                    src={companyImg}
+                    alt={name}
+                    className="md:w-26 aspect-auto w-36 items-start md:h-14"
+                  />
+                </NavLink>
                 <p className="md:order-last">{period}</p>
                 <div className="flex flex-col gap-4 md:w-3/5">
                   <p>
