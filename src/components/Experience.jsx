@@ -9,7 +9,7 @@ const Experience = () => {
         <p className="mt-4 text-center">
           Here is a quick summary of my most recent experiences:
         </p>
-        <ul className="mt-8 flex flex-col gap-8">
+        <ul className="mt-8 flex flex-col-reverse gap-8">
           {workExperience.map(
             ({
               id,

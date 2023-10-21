@@ -3,26 +3,6 @@ import cognizantImg from "../images/cognizant.png";
 
 const workExperience = [
   {
-    id: 56,
-    companyImg: neogImg,
-    name: "Neog Camp",
-    companyURL: "https://neog.camp/",
-    position: "Web Development Student",
-    projects: "Book Nook and Socialite",
-    period: "Feb 2023 - Present",
-    jobDescription: [
-      {
-        id: 12345,
-        activity: "A part of web development (MERN stack) bootcamp",
-      },
-      {
-        id: 12356,
-        activity:
-          "Learnt various technologies like HTML, CSS, JavaScript, React, NodeJS, MongoDB, ExpressJS, TypeScript and Redux.",
-      },
-    ],
-  },
-  {
     id: 55,
     companyImg: cognizantImg,
     name: "Cognizant",
@@ -53,6 +33,26 @@ const workExperience = [
         id: 1238,
         activity:
           "System, Integration, Regression, Sanity, Smoke and End2End Testing.",
+      },
+    ],
+  },
+  {
+    id: 56,
+    companyImg: neogImg,
+    name: "Neog Camp",
+    companyURL: "https://neog.camp/",
+    position: "Web Development Student",
+    projects: "Book Nook and Socialite",
+    period: "Feb 2023 - Present",
+    jobDescription: [
+      {
+        id: 12345,
+        activity: "A part of web development (MERN stack) bootcamp",
+      },
+      {
+        id: 12356,
+        activity:
+          "Learnt various technologies like HTML, CSS, JavaScript, React, NodeJS, MongoDB, ExpressJS, TypeScript and Redux.",
       },
     ],
   },
