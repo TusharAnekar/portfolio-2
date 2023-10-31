@@ -1,13 +1,17 @@
 import HeroImg from "../images/Hero.jpg";
 import PeerlistLogo from "../images/peerlist.jpeg";
+import WellFoundBlackImg from "../images/wellfound-lockup-black.png";
+import WellFoundWhiteImg from "../images/wellfound-lockup-white.png";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
+import { useThemeContext } from "../contexts/theme-context";
 
 const Hero = () => {
+  const { theme } = useThemeContext();
   return (
     <div className="mx-auto max-w-screen-lg">
       <section
@@ -69,6 +73,19 @@ const Hero = () => {
                 src={PeerlistLogo}
                 alt="Peerlist"
                 className="h-6 w-6 rounded-full"
+              />
+            </NavLink>
+
+            <NavLink
+              to={"https://wellfound.com/u/tushar-anekar"}
+              target="_blank"
+              rel="noopener norefferrer"
+              className={"transition duration-500 hover:scale-125"}
+            >
+              <img
+                src={theme === "dark" ? WellFoundWhiteImg : WellFoundBlackImg}
+                alt="Peerlist"
+                className="h-8 w-20"
               />
             </NavLink>
           </div>

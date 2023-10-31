@@ -4,10 +4,15 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import PeerlistLogo from "../images/peerlist.jpeg";
+import WellFoundBlackImg from "../images/wellfound-lockup-black.png";
+import WellFoundWhiteImg from "../images/wellfound-lockup-white.png";
 
 import { NavLink } from "react-router-dom";
+import { useThemeContext } from "../contexts/theme-context";
 
 const Contact = () => {
+  const { theme } = useThemeContext();
+
   return (
     <div className="mx-auto max-w-screen-lg">
       <section id="contact" className="border-content p-8 py-20 text-center">
@@ -72,6 +77,19 @@ const Contact = () => {
                 src={PeerlistLogo}
                 alt="Peerlist"
                 className="h-6 w-6 rounded-full"
+              />
+            </NavLink>
+
+            <NavLink
+              to={"https://wellfound.com/u/tushar-anekar"}
+              target="_blank"
+              rel="noopener norefferrer"
+              className={"transition duration-500 hover:scale-125"}
+            >
+              <img
+                src={theme === "dark" ? WellFoundWhiteImg : WellFoundBlackImg}
+                alt="Peerlist"
+                className="h-8 w-20"
               />
             </NavLink>
           </div>
