@@ -78,7 +78,7 @@ const Header = () => {
 
             <NavLink
               to={
-                "https://drive.google.com/file/d/1qGAe2sUy1iUfCCSJpPjaJ_1iHj3f6874/view?usp=sharing"
+                "https://drive.google.com/file/d/1PTOyPCloO5U80hH_2sWSq2YClu8qGBrW/view?usp=sharing"
               }
               target="_blank"
               rel="noopener norefferrer"
