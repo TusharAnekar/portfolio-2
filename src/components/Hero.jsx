@@ -15,13 +15,13 @@ const Hero = () => {
   return (
     <div className="mx-auto max-w-screen-lg">
       <section
-        className="flex  flex-col items-center gap-4 p-8 md:flex-row md:justify-center"
+        className="flex flex-col items-center gap-4 p-8 md:flex-row md:justify-center"
         id="#"
       >
         <img
           src={HeroImg}
           alt="Tushar Anekar"
-          className="aspect-auto w-full md:w-96"
+          className="order-last aspect-auto w-full md:order-first md:w-96"
         />
         <div className="flex flex-col gap-4 md:self-center">
           <p className="text-4xl font-medium md:text-5xl">Hi, I am Tushar 🙏</p>
