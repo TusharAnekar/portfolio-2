@@ -38,9 +38,10 @@ const Experience = () => {
                 </NavLink>
                 <p className="md:order-last">{period}</p>
                 <div className="flex flex-col gap-4 md:w-3/5">
-                  <p>
-                    <strong>{position}</strong>
-                  </p>
+                  <div>
+                    <p className=" font-bold">{name}</p>
+                    <p className="font-semibold">{position}</p>
+                  </div>
                   <p>Worked on projects like {projects}</p>
                   <ul className="list-disc pl-4">
                     {jobDescription.map(({ id, activity }) => (

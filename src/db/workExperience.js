@@ -1,5 +1,5 @@
-import neogImg from "../images/neog.jpeg";
 import cognizantImg from "../images/cognizant.png";
+import wednesdayLogoImg from "../images/wednesday_solutions_logo.png";
 
 const workExperience = [
   {
@@ -14,45 +14,48 @@ const workExperience = [
       {
         id: 1234,
         activity:
-          "Worked on couple of projects in Salesforce Lightning and Classic.",
+          "Worked on projects in Salesforce Lightning and Classic where agile model was used for development.",
       },
       {
         id: 1235,
-        activity: "Projects where agile model was used for development.",
+        activity:
+          "Participated actively in sprint planning, story grooming, retrospectives sessions and daily standups.",
       },
       {
         id: 1236,
         activity:
-          "Functional and automation testing of web applications on salesforce.",
+          "Reduced regression testing time by 50% through automation of high-priority test cases.",
       },
       {
         id: 1237,
-        activity: "Automating user stories testing before deployment or after.",
-      },
-      {
-        id: 1238,
         activity:
-          "System, Integration, Regression, Sanity, Smoke and End2End Testing.",
+          "Improved test coverage by 25% by writing and automating comprehensive test scenarios and cases for user stories.",
       },
     ],
   },
   {
     id: 56,
-    companyImg: neogImg,
-    name: "Neog Camp",
-    companyURL: "https://neog.camp/",
-    position: "Web Development Student",
-    projects: "Book Nook and Socialite",
-    period: "Feb 2023 - Present",
+    companyImg: wednesdayLogoImg,
+    name: "Wednesday Solutions",
+    companyURL: "https://www.wednesday.is/",
+    position: "Sofware Engineer I",
+    projects: "One Consumer",
+    period: "Oct 2024 - Present",
     jobDescription: [
       {
         id: 12345,
-        activity: "A part of web development (MERN stack) bootcamp",
+        activity:
+          "Increased user engagement by 30% by developing dynamic and responsive multi-page applications.",
       },
       {
         id: 12356,
         activity:
-          "Learnt various technologies like HTML, CSS, JavaScript, React, NodeJS, MongoDB, ExpressJS, TypeScript and Redux.",
+          "Improved application reliability by 40% through the design and execution of end-to-end tests.",
+      },
+      {
+        id: 12357,
+        activity:
+          "Reduced UI regression issues by 50% by creating UI component tests, enabling efficient visual testing and component reuse.",
       },
     ],
   },
