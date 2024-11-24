@@ -30,7 +30,7 @@ const Header = () => {
           &lt;TA /&gt;
         </HashLink>
 
-        <div>
+        <div className="flex items-center justify-center">
           <div className="md:hidden">
             {isOpenMenu ? (
               <CloseIcon
@@ -78,7 +78,7 @@ const Header = () => {
 
             <NavLink
               to={
-                "https://drive.google.com/file/d/1SmmqBfcfWHBDgLKHJqgGmEbwD7xjZ0ow/view?usp=sharing"
+                "https://drive.google.com/file/d/1XXC4QjeQJkbGGbj_nIw25Op1nqbN4ltm/view?usp=sharing"
               }
               target="_blank"
               rel="noopener norefferrer"
