@@ -6,7 +6,8 @@ import TypeScript from "../images/typescript.svg";
 import Redux from "../images/redux.svg";
 import TailwindCSS from "../images/tailwind-css.svg";
 import Git from "../images/git.svg";
-
+import next from "../images/next-js-icon.svg";
+import graphQLogo from "../images/graph-ql-icon.svg";
 const skills = [
   {
     id: 101,
@@ -55,6 +56,18 @@ const skills = [
     name: "Git",
     img: Git,
     url: "https://git-scm.com/",
+  },
+  {
+    id: 802,
+    name: "Next",
+    img: next,
+    url: "https://nextjs.org/",
+  },
+  {
+    id: 804,
+    name: "GraphQL",
+    img: graphQLogo,
+    url: "https://nextjs.org/",
   },
 ];
 
