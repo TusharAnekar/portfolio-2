@@ -79,7 +79,7 @@ const Header = () => {
 
             <NavLink
               to={
-                DRIVE_URLS.cvPDF
+                DRIVE_URLS.CV
               }
               target="_blank"
               rel="noopener norefferrer"
