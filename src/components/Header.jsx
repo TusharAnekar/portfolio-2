@@ -7,6 +7,7 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useThemeContext } from "../contexts/theme-context";
+import { DRIVE_URLS } from "../constants/driveUrls";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -78,7 +79,7 @@ const Header = () => {
 
             <NavLink
               to={
-                "https://drive.google.com/file/d/18FekOpOTcDpkwCscTMTJKh_9GZLlKSXa/view?usp=sharing"
+                DRIVE_URLS.cvPDF
               }
               target="_blank"
               rel="noopener norefferrer"
