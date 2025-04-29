@@ -17,7 +17,6 @@ const Experience = () => {
               name,
               companyURL,
               position,
-              projects,
               period,
               jobDescription,
             }) => (
@@ -42,7 +41,6 @@ const Experience = () => {
                     <p className=" font-bold">{name}</p>
                     <p className="font-semibold">{position}</p>
                   </div>
-                  <p>Worked on projects like {projects}</p>
                   <ul className="list-disc pl-4">
                     {jobDescription.map(({ id, activity }) => (
                       <li key={id}>{activity}</li>
