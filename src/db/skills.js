@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 import HTML5 from "../images/html5.svg";
 import CSS3 from "../images/css3.svg";
 import JavaScript from "../images/javascript.svg";
@@ -8,66 +9,68 @@ import TailwindCSS from "../images/tailwind-css.svg";
 import Git from "../images/git.svg";
 import next from "../images/next-js-icon.svg";
 import graphQLogo from "../images/graph-ql-icon.svg";
+import { SKILLS_URLS } from "../constants/urls";
+
 const skills = [
   {
-    id: 101,
+    id: uuidv4(),
     name: "HTML5",
     img: HTML5,
-    url: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+    url: SKILLS_URLS.HTML5,
   },
   {
-    id: 201,
+    id: uuidv4(),
     name: "CSS3",
     img: CSS3,
-    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    url: SKILLS_URLS.CSS3,
   },
   {
-    id: 301,
+    id: uuidv4(),
     name: "JavaScript",
     img: JavaScript,
-    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    url: SKILLS_URLS.JavaScript,
   },
   {
-    id: 401,
+    id: uuidv4(),
     name: "React",
     img: React,
-    url: "https://react.dev/",
+    url: SKILLS_URLS.React,
   },
   {
-    id: 501,
+    id: uuidv4(),
     name: "TypeScript",
     img: TypeScript,
-    url: "https://www.typescriptlang.org/",
+    url: SKILLS_URLS.TypeScript,
   },
   {
-    id: 601,
+    id: uuidv4(),
     name: "Redux",
     img: Redux,
-    url: "https://redux.js.org/",
+    url: SKILLS_URLS.Redux,
   },
   {
-    id: 701,
+    id: uuidv4(),
     name: "TailwindCSS",
     img: TailwindCSS,
-    url: "https://tailwindcss.com/",
+    url: SKILLS_URLS.TailwindCSS,
   },
   {
-    id: 801,
+    id: uuidv4(),
     name: "Git",
     img: Git,
-    url: "https://git-scm.com/",
+    url: SKILLS_URLS.Git,
   },
   {
-    id: 802,
+    id: uuidv4(),
     name: "Next",
     img: next,
-    url: "https://nextjs.org/",
+    url: SKILLS_URLS.Next,
   },
   {
-    id: 804,
+    id: uuidv4(),
     name: "GraphQL",
     img: graphQLogo,
-    url: "https://nextjs.org/",
+    url: SKILLS_URLS.GraphQL,
   },
 ];
 
